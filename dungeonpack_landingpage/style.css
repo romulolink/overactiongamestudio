@@ -1,0 +1,381 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("images/Dungeon-pack-1.2/Screenshot-Details1.png");
+  min-height: 100%;
+
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 500px;
+}
+
+.caption {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+}
+
+.caption span.title {
+ /* background-color: #111;*/
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+
+
+.left-half {
+ 
+  position: absolute; 
+  left: 0px;
+  width: 100%;
+}
+
+.right-half {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+
+}
+
+}
+
+.left-half {
+ 
+ /* position: absolute; */
+  float:left;
+  left: 0px;
+  width: 50%;
+}
+
+.right-half {
+  /* position: absolute; */
+  float:right;
+  right: 0px;
+  width: 50%;
+}
+
+
+
+.footer {
+  border-top: 1px solid #eaeaea;
+  padding: 10px 0;
+  margin: 40px 0 0 0;
+  width: 100%;
+}
+
+.footer a {
+
+  color: #888;
+
+}
+
+a:hover {
+
+  text-decoration: none;
+
+}
+
+.footer .soc_icons a{
+ 
+  font-size: 40px;
+}
+
+.footer .copyrights p {
+  margin: 19px 0 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 991px) {
+  .footer .copyrights p {
+    text-align: center;
+  }
+}
+.footer .soc_icons_box {
+  text-align: right;
+
+}
+@media (max-width: 991px) {
+  .footer .soc_icons_box {
+    text-align: center;
+  }
+}
+.footer .soc_icons_box ul {
+  margin: 15px 0 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  list-style: none;
+}
+.footer .soc_icons_box ul li {
+  float: left;
+  padding: 0;
+}
+.footer .soc_icons_box ul li a {
+  font-family: "FontAwesome";
+  margin: 7px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer .soc_icons_box ul li a:hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer .moduletable_login_form {
+  width: 57%;
+  margin: 15px auto 0px;
+}
+.footer .moduletable_login_form #form-login-username,
+.footer .moduletable_login_form #form-login-password,
+.footer .moduletable_login_form #form-login-submit {
+  width: 33.33333333%;
+  float: left;
+  padding: 10px;
+}
+.footer .moduletable_login_form #form-login-username input,
+.footer .moduletable_login_form #form-login-password input,
+.footer .moduletable_login_form #form-login-submit input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: #888888;
+  border: 1px solid #cccccc;
+  line-height: 20px;
+}
+.footer .moduletable_login_form .add-on {
+  display: none;
+}
+.footer .moduletable_login_form #form-login-remember,
+.footer .moduletable_login_form a {
+  font-size: 14px;
+}
+.footer .moduletable_login_form [type="submit"] {
+  padding: 7px 10px;
+  width: 100%;
+  margin-top: 0px;
+  height: 100%;
+}
+.footer .moduletable_login_form [type="submit"]:focus {
+  outline: none;
+}
+.footer .moduletable_login_form .form-login_base_button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer .moduletable_login_form .form-login_base_button:before,
+.footer .moduletable_login_form .form-login_base_button:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer .moduletable_login_form .controls,
+.footer .moduletable_login_form .input-prepend,
+.footer .moduletable_login_form .input-small {
+  height: 100%;
+}
+.footer .moduletable_login_form .checkbox input[type=checkbox] {
+  display: none;
+}
+.footer .moduletable_login_form .checkbox label > i {
+  vertical-align: text-bottom;
+  font-size: 18px;
+}
+.footer .moduletable_login_form .checkbox .fa-check-square-o {
+  display: none;
+}
+.footer .moduletable_login_form .checkbox .fa-square-o {
+  margin-right: 3px;
+}
+.footer .moduletable_login_form .checkbox input[type=checkbox]:checked + label .fa-check-square-o {
+  display: inline-block;
+}
+.footer .moduletable_login_form .checkbox input[type=checkbox]:checked + label .fa-square-o {
+  display: none;
+}
+.footer .moduletable_login_form .form-inline .control-label {
+  vertical-align: initial;
+}
+.footer .moduletable_login_form #form-login-remember,
+.footer .moduletable_login_form ul {
+  clear: both;
+  padding: 10px;
+  display: inline-block;
+}
+.footer .moduletable_login_form #form-login-remember {
+  vertical-align: baseline;
+}
+.footer .moduletable_login_form li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer .moduletable_login_form li a {
+  text-decoration: none;
+}
+.footer .moduletable_login_form .logout-button {
+  width: 33%;
+  margin: auto;
+}
+.footer .moduletable_login_form .login-greeting {
+  text-align: center;
+}
+@media (max-width: 1259px) {
+  .footer .moduletable_login_form {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 1245px) {
+  .footer .moduletable_login_form {
+    width: 64%;
+  }
+}
+@media (max-width: 1071px) {
+  .footer .moduletable_login_form {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .footer .moduletable_login_form {
+    width: 100%;
+  }
+  .footer .moduletable_login_form .checkbox label {
+    padding-left: 0px;
+  }
+  .footer .moduletable_login_form #form-login-username,
+  .footer .moduletable_login_form #form-login-password,
+  .footer .moduletable_login_form #form-login-submit {
+    width: 100%;
+    float: none;
+    padding: 10px 0px;
+  }
+}
+@media (max-width: 705px) {
+  .footer .moduletable_login_form .logout-button {
+    width: 100%;
+  }
+}
+@media (max-width: 596px) {
+  .footer .moduletable_login_form #form-login-remember,
+  .footer .moduletable_login_form ul,
+  .footer .moduletable_login_form li {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
+.footer .clearfix:before,
+.footer .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer #mainF {
+  text-align: center;
+}
+.footer #mainF a[class^=ig-b-] {
+  top: 0px;
+}
+.footer #mainF #mainCom {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+.footer #mainF #mainCom > * {
+  display: block;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+.footer #mainF .fb_like_button_container,
+.footer #mainF .fb_share_button_container,
+.footer #mainF .fb_send_button_container,
+.footer #mainF .cmp_in_container,
+.footer #mainF .cmp_twitter_container,
+.footer #mainF .cmp_vk_container,
+.footer #mainF .cmp_google_container,
+.footer #mainF .cmp_ok_container {
+  vertical-align: middle;
+}
+.footer #mainF .fb_like_button_container {
+  margin: 0px  !important ;
+}
+.footer #mainF .fb_like_button_container span,
+.footer #mainF #mainF .fb_send_button_container span {
+  width: 80px  !important ;
+}
+@media (max-width: 992px) {
+  .footer #mainF #mainCom {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer #mainF #mainCom > * {
+    margin: 4px auto  !important ;
+  }
+}
