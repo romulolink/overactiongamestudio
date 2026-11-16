@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sky Section */
+.Sky {
+  background-color: #2cd2f7;
+  height: calc(100vh - 30vh);
+  margin: 0;
+}
+
+/* Ground Section */
+.Ground {
+  background-color: #e8d8b1;
+  min-height: 30vh;
+  margin: 0;
+}
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 350px;
+}
+
+.imgContainer img {
+  width: 20vw;
+}
+
+.imgContainer .cloud2 {
+  margin-top: 10rem;
+}
+
+/* Hover Effect for Gear */
+.gear:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.rectangle {
+  width: 250px;
+  height: 60px;
+  background-color: #2473ab;
+  border-radius: 15px;
+}
+
+.rectangle2 {
+  width: 250px;
+  height: 60px;
+  background-color: #2473ab;
+  border-radius: 15px;
+}
+
+.rectangle3 {
+  width: 250px;
+  height: 60px;
+  background-color: #2473ab;
+  border-radius: 15px;
+}
+
+#diamond-num {
+  color: #fefefe;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+#coin-num {
+  color: #fefefe;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.icon24 {
+  width: 45px;
+  margin-top: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.coin {
+  float: left;
+}
+
+.coin-number {
+  float: left;
+  margin-top: 10px;
+}
+
+.diamond {
+  float: left;
+}
+
+.diamond-number {
+  float: left;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+  background-color: #fefefe;
+  width: 250px !important ;
+  border-radius: 15px;
+  margin-top: 80px;
+  margin-left: 90px;
+  height: 100px;
+}
+
+/* Estilo do botão fechar */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 225px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Estilo do controle de volume */
+.volume-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 100px;
+  margin-left: 10px;
+  margin-top: -30px;
+}
+
+.fullscreen {
+  margin-top: -10px;
+}
+
+.sound {
+  margin-top: -30px;
+}
+
+.coinButton {
+  position: absolute;
+  top: 30%;
+}
+.timer {
+  margin-right: 170px;
+  margin-top: 8px;
+  background-color: #fefefe;
+  border-radius: 20px;
+}
+
+.time {
+  margin-left: 25px;
+  margin-top: -40px;
+  font-size: x-large;
+  color: #fefefe;
+}

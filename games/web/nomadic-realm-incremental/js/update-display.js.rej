@@ -1,0 +1,12 @@
+diff a/js/update-display.js b/js/update-display.js	(rejected hunks)
+@@ -72,7 +72,9 @@
+             resProductionRateDom.innerHTML = obj.prodution_rate;
+             colorTextByNumber(obj.prodution_rate, resProductionRateDom);
+         }
+-        document.getElementById(`${r}-auto-increment`).innerHTML = obj.autoIncrement;
++
++        if(document)
++            document.getElementById(`${r}-auto-increment`).innerHTML = obj.autoIncrement;
+ 
+         if (r.clickIncrement) {
+             document.getElementById(`${r}-click-increment`).innerHTML = obj.clickIncrement;

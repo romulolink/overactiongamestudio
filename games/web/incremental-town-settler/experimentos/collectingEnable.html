@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource Collector Example</title>
+</head>
+<body>
+    <button id="increaseLevelBtn">Increase Level</button>
+    <button id="collectWoodBtn">Collect Wood</button>
+    <button id="collectIronBtn" disabled>Collect Iron</button>
+    <button id="collectGoldBtn" disabled>Collect Gold</button>
+
+    <script>
+        class ResourceCollector {
+            constructor() {
+                this.resources = {
+                    wood: { name: 'Wood', levelRequired: 1, amount: 0 },
+                    iron: { name: 'Iron', levelRequired: 2, amount: 0 },
+                    gold: { name: 'Gold', levelRequired: 3, amount: 0 },
+                    // Add more resources here
+                };
+        
+                this.playerLevel = 1; // Player starts at level 1
+            }
+        
+            // Collect a resource
+            collectResource(resourceName) {
+                if (this.resources[resourceName] && this.playerLevel >= this.resources[resourceName].levelRequired) {
+                    this.resources[resourceName].amount++;
+                    return true;
+                }
+                return false;
+            }
+        
+            // Increase player's level (simulate gaining experience)
+            increasePlayerLevel() {
+                this.playerLevel++;
+                this.updateResourceAvailability();
+            }
+        
+            // Update availability of advanced resource buttons
+            updateResourceAvailability() {
+                for (const resourceName in this.resources) {
+                    const resource = this.resources[resourceName];
+                    const collectBtn = document.getElementById(`collect${resourceName.charAt(0).toUpperCase() + resourceName.slice(1)}Btn`);
+                    if (collectBtn) {
+                        collectBtn.disabled = !(this.playerLevel >= resource.levelRequired);
+                    }
+                }
+            }
+        }
+        
+        const resourceCollector = new ResourceCollector();
+        
+        // Bind button events
+        document.getElementById('increaseLevelBtn').addEventListener('click', () => {
+            resourceCollector.increasePlayerLevel();
+        });
+        
+        document.getElementById('collectWoodBtn').addEventListener('click', () => {
+            resourceCollector.collectResource('wood');
+        });
+        
+        document.getElementById('collectIronBtn').addEventListener('click', () => {
+            resourceCollector.collectResource('iron');
+        });
+        
+        document.getElementById('collectGoldBtn').addEventListener('click', () => {
+            resourceCollector.collectResource('gold');
+        });
+    </script>
+</body>
+</html>
