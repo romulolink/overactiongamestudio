@@ -28,6 +28,10 @@
     nav ul a::after { content:""; position:absolute; left:0; bottom:0; height:2px; width:0; background:linear-gradient(90deg,var(--a),var(--b)); transition:width .25s; }
     nav ul a:hover { color:var(--text); }
     nav ul a:hover::after { width:100%; }
+    nav { gap:1rem; flex-wrap:wrap; }
+    .social { display:flex; gap:.5rem; }
+    .social a { font-size:.72rem; letter-spacing:.06em; color:var(--muted); text-decoration:none; padding:.3rem .75rem; border:1px solid rgba(255,255,255,.14); border-radius:999px; transition:color .2s, border-color .2s, transform .2s, box-shadow .2s; }
+    .social a:hover { color:#fff; border-color:var(--a); transform:translateY(-2px); box-shadow:0 6px 16px rgba(124,92,255,.35); }
     main { position:relative; z-index:1; }
     section { padding:5rem 6vw; max-width:1200px; margin:0 auto; }
     .hero { min-height:70vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
@@ -74,6 +78,12 @@
       <li><a href="#games">GAMES</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
+    <div class="social">
+      <a href="https://www.youtube.com/@overactiongamestudio" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+      <a href="https://x.com/overactiongs" target="_blank" rel="noopener" aria-label="X">X</a>
+      <a href="https://bsky.app/profile/overactiongamestudio.com" target="_blank" rel="noopener" aria-label="Bluesky">Bluesky</a>
+      <a href="https://www.instagram.com/overactiongamestudio/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+    </div>
   </nav>
   <main id="top">
     <section class="hero">
