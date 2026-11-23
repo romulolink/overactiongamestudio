@@ -66,6 +66,8 @@
     .card:hover .cover img { transform:scale(1.07); }
     .packs .cover { aspect-ratio:315/250; position:relative; }
     .badge { position:absolute; top:.6rem; right:.6rem; background:linear-gradient(90deg,var(--a),var(--b)); color:#0e1018; font-weight:700; font-size:.7rem; padding:.2rem .6rem; border-radius:999px; }
+    .sub { margin:2rem 0 1rem; font-size:1.3rem; }
+    .sub small { color:var(--b); font-size:.75rem; font-weight:400; margin-left:.4rem; }
     .info { padding:1rem 1.1rem 1.2rem; display:flex; flex-direction:column; gap:.4rem; }
     .info h3 { margin:0; font-size:1.05rem; }
     .meta { margin:0; color:var(--b); font-size:.8rem; }
@@ -115,6 +117,7 @@
 
     <section id="games">
       <h2 class="reveal">Games</h2>
+      <h3 class="sub reveal">Paid <small>Steam</small></h3>
       <div class="grid">
       <a class="card reveal" href="https://store.steampowered.com/app/4405080/" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/covers/4405080.jpg" alt="Island Idle RPG: Build and Conquer cover" loading="lazy"></div>
@@ -216,11 +219,51 @@
         </div>
       </a>
       </div>
+      <h3 class="sub reveal">Free <small>itch.io</small></h3>
+      <div class="grid packs">
+      <a class="card reveal" href="https://overactiongames.itch.io/fox-idle-rpg" target="_blank" rel="noopener">
+        <div class="cover"><img src="assets/itch/fox-idle-rpg.png" alt="Fox Idle RPG cover" loading="lazy"><span class="badge">FREE</span></div>
+        <div class="info">
+          <h3>Fox Idle RPG</h3>
+          <p class="meta">Play in browser &middot; itch.io</p>
+          <p class="desc">Lead your fox crew across the sea in a cozy idle RPG of gathering, crafting, farming, and boss battles.</p>
+          <div class="tags"><span>Free</span><span>Idle</span></div>
+        </div>
+      </a>
+      <a class="card reveal" href="https://overactiongames.itch.io/incremental-town-rpg" target="_blank" rel="noopener">
+        <div class="cover"><img src="assets/itch/incremental-town-web.png" alt="Incremental Town RPG - Web cover" loading="lazy"><span class="badge">FREE</span></div>
+        <div class="info">
+          <h3>Incremental Town RPG - Web</h3>
+          <p class="meta">Play in browser &middot; itch.io</p>
+          <p class="desc">Embark on an incremental journey, gather resources, upgrade your town and accumulate coin.</p>
+          <div class="tags"><span>Free</span><span>Incremental</span></div>
+        </div>
+      </a>
+      <a class="card reveal" href="https://overactiongames.itch.io/dark-sanctum" target="_blank" rel="noopener">
+        <div class="cover"><img src="assets/itch/dark-sanctum.png" alt="Dark Sanctum cover" loading="lazy"><span class="badge">FREE</span></div>
+        <div class="info">
+          <h3>Dark Sanctum</h3>
+          <p class="meta">Download &middot; itch.io</p>
+          <p class="desc">Embark on a thrilling journey in this text-based RPG, where every decision shapes your fate.</p>
+          <div class="tags"><span>Free</span><span>Text RPG</span></div>
+        </div>
+      </a>
+      <a class="card reveal" href="https://overactiongames.itch.io/incremental-village" target="_blank" rel="noopener">
+        <div class="cover"><img src="assets/itch/pixel-kingdom.png" alt="Pixel Kingdom - Alpha cover" loading="lazy"><span class="badge">FREE</span></div>
+        <div class="info">
+          <h3>Pixel Kingdom - Alpha</h3>
+          <p class="meta">Alpha &middot; Download &middot; itch.io</p>
+          <p class="desc">Grow a tiny island village from a few villagers into a thriving settlement, one resource at a time.</p>
+          <div class="tags"><span>Free</span><span>Simulation</span></div>
+        </div>
+      </a>
+      </div>
     </section>
 
     <section id="assets">
       <h2 class="reveal">Assets</h2>
       <p class="reveal" style="color:var(--muted);margin-top:-.5rem">Low-poly and 2D asset packs for your games, available on <a href="https://overactiongames.itch.io/" target="_blank" rel="noopener" style="color:var(--b)">itch.io</a>.</p>
+      <h3 class="sub reveal">Paid</h3>
       <div class="grid packs">
       <a class="card reveal" href="https://overactiongames.itch.io/animated-pbr-fantasy-snake-asset-pack" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/packs/snake.png" alt="Animated Cartoon Low-Poly Snake Boss Asset Pack cover" loading="lazy"></div>
@@ -276,6 +319,9 @@
           <div class="tags"><span>2D Assets</span><span>Game Dev</span></div>
         </div>
       </a>
+      </div>
+      <h3 class="sub reveal">Free</h3>
+      <div class="grid packs">
       <a class="card reveal" href="https://overactiongames.itch.io/free-animated-cartoon-low-poly-skeleton-enemy" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/packs/skeleton.png" alt="Free Animated Cartoon Low-Poly Skeleton cover" loading="lazy"><span class="badge">FREE</span></div>
         <div class="info">
@@ -312,7 +358,7 @@
           <div class="tags"><span>3D Assets</span><span>Game Dev</span></div>
         </div>
       </a>
-      </div>
+            </div>
     </section>
 
     <section id="contact" class="contact reveal">
