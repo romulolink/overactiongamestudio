@@ -66,8 +66,13 @@
     .card:hover .cover img { transform:scale(1.07); }
     .packs .cover { aspect-ratio:315/250; position:relative; }
     .badge { position:absolute; top:.6rem; right:.6rem; background:linear-gradient(90deg,var(--a),var(--b)); color:#0e1018; font-weight:700; font-size:.7rem; padding:.2rem .6rem; border-radius:999px; }
-    .sub { margin:2rem 0 1rem; font-size:1.3rem; }
-    .sub small { color:var(--b); font-size:.75rem; font-weight:400; margin-left:.4rem; }
+    .sub { display:flex; align-items:center; gap:1rem; margin:3.2rem 0 1.4rem; padding:.9rem 1.2rem; border-radius:14px; font-size:1rem; border:1px solid var(--c); background:linear-gradient(90deg,var(--bg2),transparent 80%); position:relative; }
+    .sub::before { content:""; position:absolute; left:0; top:0; bottom:0; width:6px; border-radius:14px 0 0 14px; background:var(--c); box-shadow:0 0 18px var(--c); }
+    .sub .pill { font-size:1.5rem; font-weight:800; letter-spacing:.14em; color:var(--c); text-shadow:0 0 16px var(--c); margin-left:.5rem; }
+    .sub small { margin-left:auto; color:var(--muted); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
+    .sub.premium { --c:#ffc247; --bg2:rgba(255,194,71,.14); }
+    .sub.free { --c:#3ddc97; --bg2:rgba(61,220,151,.14); }
+    .badge { background:linear-gradient(90deg,#3ddc97,#22d3ee) !important; }
     .info { padding:1rem 1.1rem 1.2rem; display:flex; flex-direction:column; gap:.4rem; }
     .info h3 { margin:0; font-size:1.05rem; }
     .meta { margin:0; color:var(--b); font-size:.8rem; }
@@ -117,7 +122,7 @@
 
     <section id="games">
       <h2 class="reveal">Games</h2>
-      <h3 class="sub reveal">Paid <small>Steam</small></h3>
+      <h3 class="sub premium reveal"><span class="pill">PREMIUM</span><small>Steam</small></h3>
       <div class="grid">
       <a class="card reveal" href="https://store.steampowered.com/app/4405080/" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/covers/4405080.jpg" alt="Island Idle RPG: Build and Conquer cover" loading="lazy"></div>
@@ -219,7 +224,7 @@
         </div>
       </a>
       </div>
-      <h3 class="sub reveal">Free <small>itch.io</small></h3>
+      <h3 class="sub free reveal"><span class="pill">FREE</span><small>itch.io</small></h3>
       <div class="grid packs">
       <a class="card reveal" href="https://overactiongames.itch.io/fox-idle-rpg" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/itch/fox-idle-rpg.png" alt="Fox Idle RPG cover" loading="lazy"><span class="badge">FREE</span></div>
@@ -263,7 +268,7 @@
     <section id="assets">
       <h2 class="reveal">Assets</h2>
       <p class="reveal" style="color:var(--muted);margin-top:-.5rem">Low-poly and 2D asset packs for your games, available on <a href="https://overactiongames.itch.io/" target="_blank" rel="noopener" style="color:var(--b)">itch.io</a>.</p>
-      <h3 class="sub reveal">Paid</h3>
+      <h3 class="sub premium reveal"><span class="pill">PREMIUM</span><small>itch.io</small></h3>
       <div class="grid packs">
       <a class="card reveal" href="https://overactiongames.itch.io/animated-pbr-fantasy-snake-asset-pack" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/packs/snake.png" alt="Animated Cartoon Low-Poly Snake Boss Asset Pack cover" loading="lazy"></div>
@@ -320,7 +325,7 @@
         </div>
       </a>
       </div>
-      <h3 class="sub reveal">Free</h3>
+      <h3 class="sub free reveal"><span class="pill">FREE</span><small>itch.io</small></h3>
       <div class="grid packs">
       <a class="card reveal" href="https://overactiongames.itch.io/free-animated-cartoon-low-poly-skeleton-enemy" target="_blank" rel="noopener">
         <div class="cover"><img src="assets/packs/skeleton.png" alt="Free Animated Cartoon Low-Poly Skeleton cover" loading="lazy"><span class="badge">FREE</span></div>
